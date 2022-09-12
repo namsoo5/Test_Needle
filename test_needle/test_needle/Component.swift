@@ -52,6 +52,7 @@ protocol PeopleDependency: Dependency {
 
 final class PeopleComponent: Component<PeopleDependency>, PeopleBuilder {
     private let id: Int
+
     init(parent: Scope, id: Int) {
         self.id = id
         super.init(parent: parent)
@@ -78,6 +79,7 @@ protocol RobotDependency: Dependency {
 
 final class RobotComponent: Component<RobotDependency>, RobotBuilder {
     private let id: Int
+    
     init(parent: Scope, id: Int) {
         self.id = id
         super.init(parent: parent)
